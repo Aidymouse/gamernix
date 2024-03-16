@@ -15,7 +15,7 @@
 
   outputs = inputs@{ self, home-manager, nixpkgs }: {
     nixosConfigurations = {
-      flakeEn = nixpkgs.lib.nixosSystem {
+      vmware = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
 	  ./hardware-configuration-vmware.nix
