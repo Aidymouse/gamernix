@@ -44,7 +44,7 @@
 
 	services.blueman.enable = true;
 
-	programs.zsh.enable = true;
+
   
 	# Bootloader.
   boot.loader.systemd-boot.enable = true;

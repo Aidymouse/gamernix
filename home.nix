@@ -30,6 +30,9 @@
 	neovim
 	discord
 	pavucontrol
+	git-credential-manager
+
+	waybar
 
     # utils
     ripgrep # recursively searches directories for a regex pattern
@@ -40,11 +43,18 @@
   
   ];
 
+programs.zsh = {
+	enable = true;
+	shellAliases = {
+		nixBuildFlake = "sudo nixos-rebuild switch --flake";
+		cs = "cowsay";
+	};
+};
   # basic configuration of git, please change to your own
   programs.git = {
     enable = true;
     userName = "Aidymouse";
-    userEmail = "aidymouse4891@gmail.com";
+    userEmail = "aidan@thewizardscat.co.nz";
   };
 
   # starship - an customizable prompt for any shell
@@ -66,7 +76,7 @@
     settings = {
       env.TERM = "xterm-256color";
       font = {
-        size = 12;
+        size = 14;
         draw_bold_text_with_bright_colors = true;
       };
       scrolling.multiplier = 5;
@@ -74,9 +84,6 @@
     };
   };
 
-  programs.zsh = {
-    enable = true;
-  };
 
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
