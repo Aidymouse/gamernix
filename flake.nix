@@ -18,6 +18,7 @@
       flakeEn = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
+	  ./hardware-configuration-vmware.nix
           ./configuration.nix
 
         
