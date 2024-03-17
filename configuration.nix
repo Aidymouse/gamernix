@@ -147,6 +147,10 @@
   #  wget
   ];
 
+	fonts.packages = with pkgs; [
+		font-awesome
+		powerline-symbols
+	];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
