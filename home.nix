@@ -4,8 +4,7 @@
   # TODO please change the username & home directory to your own
   home.username = "aidan";
   home.homeDirectory = "/home/aidan";
-
-  # link the configuration file in current directory to the specified location in home directory
+# link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
 
   # link all files in `./scripts` to `~/.config/i3/scripts`
@@ -26,10 +25,10 @@
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
 
-	# programs
-	neovim
-	discord
-	pavucontrol
+    # programs
+    neovim
+    discord
+    pavucontrol
 
     # utils
     ripgrep # recursively searches directories for a regex pattern
