@@ -27,7 +27,8 @@
 
     # programs
     neovim
-    discord
+    lazygit
+    #discord
     pavucontrol
 
     # utils

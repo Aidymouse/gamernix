@@ -6,11 +6,13 @@
 	home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, home-manager }: {
+  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
+
+	#nixpkgs.config.allowUnfree = true;
 
 	nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
 		modules = [
-			./config.nix
+			./configuration.nix
 
 			home-manager.nixosModules.home-manager {
 				home-manager.users.aidan = import ./home.nix;
