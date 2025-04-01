@@ -11,10 +11,14 @@
 	#nixpkgs.config.allowUnfree = true;
 
 	nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+		specialArgs = {
+			pkgs = import nixpkgs { system="x86_64-linux"; config.allowUnfree = true; };
+		};
 		modules = [
-			./configuration.nix
+			./config.nix
 
 			home-manager.nixosModules.home-manager {
+				home-manager.useGlobalPkgs = true;
 				home-manager.users.aidan = import ./home.nix;
 			}
 		];

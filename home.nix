@@ -31,9 +31,13 @@
     #discord
     pavucontrol
 
+    texliveConTeXt
+    dropbox
+
     # utils
     ripgrep # recursively searches directories for a regex pattern
     unzip
+    wget
   
     # misc
     cowsay
