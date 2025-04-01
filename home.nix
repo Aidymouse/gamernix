@@ -80,6 +80,12 @@
 
   programs.zsh = {
     enable = true;
+    oh-my-zsh = {
+    	enable = true;
+    };
+    shellAliases = {
+    	lg = "lazygit";
+    };
   };
 
   # This value determines the home Manager release that your
