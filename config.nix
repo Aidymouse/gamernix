@@ -18,7 +18,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -26,7 +25,12 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Enable networking
-  networking.networkmanager.enable = true;
+
+  networking = {
+	  hostName = "groundspawn-nixos"; # Define your hostname.
+	  # useDHCP = false; # Nevermind not true -> I think this does something to do with failing to reach servers on the first try?
+	  networkmanager.enable = true;
+  };
 
 	#  xdg.portal = {
 	# enable = true;
@@ -150,6 +154,8 @@
 	waybar
 	wofi
 	ags
+
+	wirelesstools
 
 	font-awesome
 
