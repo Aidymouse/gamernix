@@ -66,6 +66,7 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
+  services.printing.drivers = [ pkgs.gutenprint ];
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
@@ -115,6 +116,10 @@
 	fonts.packages = with pkgs; [
 	#roboto
 	nerd-fonts.fira-code
+	nerd-fonts.bigblue-terminal
+	nerd-fonts.departure-mono
+	#nerd-fonts.bigblueterm
+	#bigblueterm
 	];
 
 	fonts.fontconfig = {
@@ -130,6 +135,10 @@
   #  wget
 	waybar
 	wofi
+
+
+	# gutenprint
+	# cups
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
