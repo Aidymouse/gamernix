@@ -28,6 +28,19 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+	#  xdg.portal = {
+	# enable = true;
+	# #xdgOpenUsePortal = true;
+	# extraPortals = [ 
+	# 	pkgs.xdg-desktop-portal
+	# 	#pkgs.xdg-desktop-portal-gtk 
+	# 	pkgs.xdg-desktop-portal-wlr 
+	# ];
+	# config = {
+	# 	common.default = ["wlr"];
+	# };
+	#  };
+
   # Enable network manager applet
   # programs.nm-applet.enable = true;
 
@@ -55,8 +68,8 @@
   services.xserver.enable = true;
 
   # Enable the LXQT Desktop Environment.
-  #services.xserver.displayManager.lightdm.enable = true;
-  #services.xserver.desktopManager.lxqt.enable = true;
+  # services.xserver.displayManager.lightdm.enable = true;
+  # services.xserver.desktopManager.lxqt.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -108,6 +121,7 @@
   services.displayManager.autoLogin.enable = true;
   services.xserver.displayManager.autoLogin.user = "aidan";
 
+
 	# Install firefox.
 	programs.firefox.enable = true;
 
@@ -132,10 +146,12 @@
   environment.systemPackages = with pkgs; [
     #vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
 	neovim
-  #  wget
+
 	waybar
 	wofi
 	ags
+
+	font-awesome
 
 	# Needed to enable screenshots with Sway
 	slurp
