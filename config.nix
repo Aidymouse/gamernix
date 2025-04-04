@@ -135,6 +135,11 @@
   #  wget
 	waybar
 	wofi
+	ags
+
+	# Needed to enable screenshots with Sway
+	slurp
+	wl-clipboard
 
 
 	# gutenprint
