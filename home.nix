@@ -41,6 +41,9 @@
   
     # misc
     cowsay
+
+    # programming
+    python3
   
   ];
 
@@ -82,10 +85,12 @@
     enable = true;
     oh-my-zsh = {
     	enable = true;
+    theme = "robbyrussel";
     };
     shellAliases = {
     	lg = "lazygit";
     };
+    
   };
 
   # This value determines the home Manager release that your
