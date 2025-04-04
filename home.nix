@@ -44,6 +44,9 @@
 
     # programming
     python3
+
+    # music
+	ncspot
   
   ];
 
