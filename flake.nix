@@ -13,14 +13,6 @@
 
 	#nixpkgs.config.allowUnfree = true;
 
-	# Set up devshells
-	devShells.${system}.agsShell = nixpkgs.legacyPackages.${system}.mkShell {
-		buildInputs = [
-			(ags.packages.${system}.default.override {
-				#extraPackages = [];
-			})
-		];
-	};
 
 	# Main Config
 	nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
