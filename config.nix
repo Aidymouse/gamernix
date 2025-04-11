@@ -136,6 +136,7 @@
 	nerd-fonts.fira-code
 	nerd-fonts.bigblue-terminal
 	nerd-fonts.departure-mono
+	nerd-fonts.gohufont
 	#nerd-fonts.bigblueterm
 	#bigblueterm
 	];
