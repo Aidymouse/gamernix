@@ -17,6 +17,7 @@
 		buildInputs = with pkgs; [
 			libclang
 			cmake
+			sdl3
 			#X11
 		];
 
