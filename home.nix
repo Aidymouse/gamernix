@@ -33,6 +33,7 @@
 
     texliveConTeXt
     dropbox
+    nnn
 
     # utils
     ripgrep # recursively searches directories for a regex pattern
