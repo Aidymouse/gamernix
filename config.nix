@@ -30,8 +30,8 @@
 	  hostName = "groundspawn-nixos"; # Define your hostname.
 	  # useDHCP = false; # Nevermind not true -> I think this does something to do with failing to reach servers on the first try?
 	  networkmanager.enable = true;
+	  networkmanager.insertNameservers = [ "1.1.1.1" "8.8.8.8"];
   };
-
 	#  xdg.portal = {
 	# enable = true;
 	# #xdgOpenUsePortal = true;
