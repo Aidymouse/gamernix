@@ -16,6 +16,7 @@
 	devShells.${system}.default = nixpkgs.legacyPackages.${system}.mkShell {
 		buildInputs = with pkgs; [
 			libclang
+			clangd
 			cmake
 			sdl3
 			#X11
