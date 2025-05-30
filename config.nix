@@ -45,8 +45,13 @@
 	# };
 	#  };
 
+  # Auto mount USB apparently
+  services.devmon.enable = true;
+	services.gvfs.enable = true;
+	services.udisks2.enable = true;
   # Enable network manager applet
   # programs.nm-applet.enable = true;
+	programs.adb.enable = true;
 
 	programs.sway.enable = true;
 
@@ -114,7 +119,7 @@
 			shell = pkgs.zsh;
 			isNormalUser = true;
 			description = "aidan";
-			extraGroups = [ "networkmanager" "wheel" ];
+			extraGroups = [ "networkmanager" "wheel" "adbusers" ];
 			packages = with pkgs; [
 			#  thunderbird
 			];
