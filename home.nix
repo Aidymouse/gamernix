@@ -26,6 +26,7 @@
     # feel free to add your own or remove some of them
 
     librewolf
+	sayonara
 
     # programs
     neovim
