@@ -14,6 +14,10 @@
 
 	# Set up devshells
 	devShells.${system}.default = nixpkgs.legacyPackages.${system}.mkShell {
+		# packages = [
+		# 	pkgs.vulkan-headers
+		# ];
+
 		buildInputs = with pkgs; [
 			gcc
 			libclang
@@ -22,13 +26,19 @@
 			cmake
 			sdl3
 
-			shaderc,
+			shaderc
 			vulkan-headers
 			vulkan-loader
+			vulkan-validation-layers
+			vulkan-tools-lunarg
+			vulkan-tools
 			glfw3
 			#X11
 		];
 
+		# LD_LIBRARY_PATH="${pkgs.glfw}/lib:${freetype}/lib:${vulkan-loader}/lib:${vulkan-validation-layers}/lib";
+		VULKAN_SDK = "${pkgs.vulkan-headers}";
+		VK_LAYER_PATH = "${pkgs.vulkan-validation-layers}/share/vulkan/explicit_layer.d";
 		#shellHook = "Running AGS shell";
 	};
 
