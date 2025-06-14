@@ -26,7 +26,7 @@
     # feel free to add your own or remove some of them
 
     librewolf
-	sayonara
+	bluetui
 
     # programs
     neovim
@@ -34,7 +34,6 @@
     #discord
     pavucontrol
 
-    texliveConTeXt
     dropbox
     nnn
 
@@ -45,12 +44,15 @@
   
     # misc
     cowsay
+    freecad
 
     # programming
     python3
+    python313Packages.fonttools
 
     # music
 	ncspot
+	sayonara
   
   ];
 
@@ -92,7 +94,6 @@
     enable = true;
     oh-my-zsh = {
     	enable = true;
-    theme = "robbyrussel";
     };
     shellAliases = {
     	lg = "lazygit";
