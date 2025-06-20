@@ -14,6 +14,8 @@
       ./hardware-configuration.nix
     ];
 
+	hardware.bluetooth.enable = true;
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -143,6 +145,8 @@
 	nerd-fonts.bigblue-terminal
 	nerd-fonts.departure-mono
 	nerd-fonts.gohufont
+	nerd-fonts.monofur
+	nerd-fonts.mononoki
 	#nerd-fonts.bigblueterm
 	#bigblueterm
 	];

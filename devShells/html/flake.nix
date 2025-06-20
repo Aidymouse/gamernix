@@ -17,6 +17,8 @@
 	devShells.${system}.default = nixpkgs.legacyPackages.${system}.mkShell {
 		buildInputs = with pkgs; [
 			simple-http-server
+			nodejs
+			nodePackages.prettier
 			# typst
 			# tinymist
 			# libclang

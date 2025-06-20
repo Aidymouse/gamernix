@@ -17,14 +17,6 @@
 	devShells.${system}.default = nixpkgs.legacyPackages.${system}.mkShell {
 		buildInputs = with pkgs; [
 			renpy
-			# simple-http-server
-			# nodejs
-			# nodePackages.prettier
-			# typst
-			# tinymist
-			# libclang
-			# cmake
-			#X11
 		];
 
 		#shellHook = "Running AGS shell";

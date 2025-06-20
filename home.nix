@@ -33,9 +33,13 @@
     lazygit
     #discord
     pavucontrol
-
     dropbox
     nnn
+
+    # Images etc
+    inkscape
+    imagemagick
+
 
     # utils
     ripgrep # recursively searches directories for a regex pattern

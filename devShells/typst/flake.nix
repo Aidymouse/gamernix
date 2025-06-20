@@ -17,9 +17,11 @@
 	devShells.${system}.default = nixpkgs.legacyPackages.${system}.mkShell {
 		buildInputs = with pkgs; [
 			typst
+			tinymist
 			# libclang
 			# cmake
 			#X11
+			python313Packages.python-lsp-server
 		];
 
 		#shellHook = "Running AGS shell";
